@@ -43,64 +43,16 @@ body{
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
-h1{
-    color:#445161;
-    font-size:30px;
-}
-h2{
-    font-size: 25px;
-    line-height: 30px;
-    color: #445161
-}
-
-h3{
-    font-size: 20px;
-}
-
-.text {
-    color: #333333;
-    line-height:25px;
+.example-block {
+    margin: 0px 0px 20px;
+    border: 2px solid black
+} 
+.example-string {
+    border: 2px solid black
 
 }
 
-.bold {
-    line-height: 14px;
-    font-weight:700;
-
-}
-.red {
-    color:red;
-}
-
-.right {
-    text-align: right;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.ithalic {
-    font-style: italic;
-}
-.decoration {
-    text-decoration: underline;
-}
-.center {
-    text-align: center;;
-}
-.size24 {
-    font-style: 24px;
-}
-.lthrough {
-    text-decoration: line-through;
-}
-.font-text {
-    font-family: 'Times New Roman', Times, serif
-}
-.shadow-text {
-    text-shadow: 0px 1px 1px #000000;
-}
-
-.white-space{
-    white-space:normal;
+.example-image{
+    height: 200px;
+    max-height: 100px;
 }
