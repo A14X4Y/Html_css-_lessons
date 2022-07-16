@@ -44,15 +44,17 @@ body{
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .example-block {
-    margin: 0px 0px 20px;
-    border: 2px solid black
-} 
-.example-string {
-    border: 2px solid black
+
+    visibility: hidden;
+    font-size: 30px;
+
 
 }
-
-.example-image{
-    height: 200px;
-    max-height: 100px;
+.example-string {
+    font-size: 50px;
+}
+.example-image {
+    border: 5px dotted #000;
+    border-radius: 10px 20px 30px 10px;
+    width: 500px;
 }
