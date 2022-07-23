@@ -1,0 +1,61 @@
+//файл обнуляющих стилей
+@import "nullstyle.scss";
+
+$fz:100px;
+$color_2:blue;
+$color_1:green;
+
+.tplborder {
+    font-size: 100px;
+    border-bottom: 5px dashed red;
+}
+
+@mixin fontz($f, $c) {
+    font-size: $f;
+    color: ($c)
+}
+
+.block {
+    width: 300px / 960px * 100%;
+    background-color: #666;
+    padding: 30px;
+    font-size: 50px;
+    line-height: 100px;
+
+    .block__text {
+        font-size: $fz;
+
+        span {
+            color: $color_1;
+        }
+    }
+
+    &.block--big {
+        font-size: $fz;
+    }
+}
+
+.link {
+    color: $color_1;
+    text-decoration: underline;
+    font-size: $fz;
+
+
+    .block & {
+        font-size: $fz;
+    }
+
+    &:hover {
+        color: $color_2;
+    }
+
+}
+
+.link-2 {
+    @include fontz(50px, green);
+    border-bottom: black;
+}
+
+.link-3 {
+    color: blue;
+}
